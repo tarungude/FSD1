@@ -1,0 +1,15 @@
+body {
+  background-color: #f0f8ff;
+  font-family: Verdana, sans-serif;
+}
+.external-class {
+  background-color: #e0ffff;
+  border: 2px solid blue;
+  padding: 10px;
+}
+.external-class h1 {
+  color: darkblue;
+}
+.external-class p {
+  color: navy;
+}

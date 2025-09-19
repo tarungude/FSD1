@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment: CSS Box Model</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .box {
+      width: 250px;
+      margin: 40px auto;
+      padding: 20px;                /* Padding: space inside border */
+      border: 5px solid #0077b6;    /* Border around content + padding */
+      background-color: #90e0ef;    /* Content background */
+      text-align: center;
+    }
+
+    .labels {
+      margin-top: 30px;
+      padding: 15px;
+      background: #caf0f8;
+      border: 2px dashed #0077b6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Box Model Example</h1>
+
+  
+  <div class="box">
+    <p><strong>Content</strong> - This is the text inside the box.</p>
+  </div>
+
+  
+  <div class="labels">
+    <p><strong>Padding</strong> - Space between content and border.</p>
+    <p><strong>Border</strong> - Surrounds the padding and content.</p>
+    <p><strong>Margin</strong> - Space outside the border (gap between boxes).</p>
+  </div>
+
+</body>
+</html>
