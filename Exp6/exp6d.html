@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voter Eligibility Check</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      background: lightgrey;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 50%;
+      background: lightblue;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      font-size: 16px;
+    }
+    th {
+      background: lightcyan;
+    }
+  </style>
+</head>
+<body>
+  <h1>Voter Information</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td id="voterName"></td>
+      <td id="voterAge"></td>
+      <td id="voterStatus"></td>
+    </tr>
+  </table>
+  <script> 
+    let name = prompt("Enter your name:");
+    let age = prompt("Enter your age:");
+    age = parseInt(age);
+    let status = (age >= 18) ? "Eligible to Vote" : "Not Eligible to Vote ";
+    document.getElementById("voterName").innerHTML = name;
+    document.getElementById("voterAge").innerHTML = age;
+    document.getElementById("voterStatus").innerHTML = status;
+  </script>
+</body>
+</html>

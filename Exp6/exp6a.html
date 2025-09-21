@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Example</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: darkblue;
+            color: white;
+        }
+        button:hover {
+            background-color: navy;
+        }
+    </style>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function internalFunction() {
+            alert("This is an Internal JavaScript function!");
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Embedding Example</h1>
+    <p>Click the buttons below to run internal and external JavaScript functions.</p>
+
+    <button onclick="internalFunction()">Run Internal JavaScript</button>
+    <br><br>
+    <button onclick="externalFunction()">Run External JavaScript</button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
