@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Working of Tags</title>
+  
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #4CAF50;
+      color: rgb(82, 57, 57);
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    main {
+      display: flex;
+      margin: 20px;
+    }
+    article {
+      flex: 3;
+      padding: 15px;
+      background: white;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    aside {
+      flex: 1;
+      padding: 15px;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+    section {
+      margin: 20px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-style: italic;
+      color: #555;
+    }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+
+  
+ 
+</head>
+<body>
+
+  <header>
+    <h1>Experiment 3: HTML5 Semantic Tags</h1>
+    <p>Understanding HTML structure and CSS types</p>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="artical.html">Articles</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>About Semantic HTML</h2>
+      <p>Semantic HTML provides <span class="highlight">meaning</span> to web content. 
+      It improves accessibility, SEO, and readability.</p>
+    </article>
+
+    <aside>
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/">W3Schools HTML</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <section>
+    <h2>Example with Figure</h2>
+    <figure>
+      <img src="images.jpg" alt="HTML Example" width="300" height="200" style="border-radius:10px;"> <!-- Inline CSS -->
+      <figcaption>Figure: HTML Document Example</figcaption>
+    </figure>
+  </section>
+
+  <div>
+    <h2>Extra Notes</h2>
+    <p>Div is a generic container, while <span style="color:blue; font-weight:bold;">span</span> is used for inline text styling.</p>
+  </div>
+
+  <footer>
+    <p>&copy; | Designed using HTML5 & CSS</p>
+  </footer>
+
+</body>
+</html>

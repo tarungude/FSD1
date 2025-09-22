@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tilted Fixed Background</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+
+    /* Background image halfway down the page, fixed & tilted */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;        
+      left: 50%;       
+      transform: translate(-50%, -50%) rotate(180deg); 
+      width: 600px;
+      height: 400px;
+      background-image: url("https://picsum.photos/800/600");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;    
+      pointer-events: none;
+      z-index: -1;      
+    }
+  </style>  
+</head>
+<body>
+
+  <h1>Tilted Fixed Background Image</h1>
+  <p>
+    This example demonstrates how to place a background image halfway down the page, 
+    tilt it horizontally, and keep it fixed while scrolling.
+  </p>
+
+  <p style="height: 1200px;">
+    Scroll down to see that the tilted image remains in place 
+    while the page content moves.
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Different Input Methods</title>
+  <style>
+    body { font-family: 'Times New Roman', Times, serif; text-align: center; background: #f0f8ff; }
+    input, button { margin: 8px; padding: 6px; font-size: 14px; }
+    .output { margin: 10px auto; padding: 10px; width: 50%; border: 1px solid #333;border-radius: 10px; background: #fffacd; }
+  </style>
+</head>
+<body>
+
+  <h1>Different Input Methods in JavaScript</h1>
+
+  <!-- 1. Prompt -->
+  <button onclick="takePrompt()">Use Prompt()</button>
+  <div id="promptOutput" class="output">Prompt Output will appear here.</div>
+
+  <!-- 2. Input Box -->
+  <input type="text" id="textInput" placeholder="Enter something in Input Box">
+  <button onclick="takeInputBox()">Get Input Box Value</button>
+  <div id="inputBoxOutput" class="output">Input Box Output will appear here.</div>
+
+  <!-- 3. Form -->
+  <form onsubmit="takeFormInput(event)">
+    <input type="text" id="formInput" placeholder="Enter Form Value">
+    <button type="submit">Submit Form</button>
+  </form>
+  <div id="formOutput" class="output">Form Output will appear here.</div>
+
+  <script>
+    // 1. Prompt
+    function takePrompt() {
+      let name = prompt("Enter your name:");
+      document.getElementById("promptOutput").innerHTML = "Prompt Input: " + name;
+    }
+
+    // 2. Input Box
+    function takeInputBox() {
+      let value = document.getElementById("textInput").value;
+      document.getElementById("inputBoxOutput").innerHTML = "Input Box Value: " + value;
+    }
+
+    // 3. Form
+    function takeFormInput(event) {
+      event.preventDefault(); 
+      let value = document.getElementById("formInput").value;
+      document.getElementById("formOutput").innerHTML = "Form Input Value: " + value;
+    }
+  </script>
+
+</body>
+</html>
